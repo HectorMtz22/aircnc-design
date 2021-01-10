@@ -1,0 +1,208 @@
+/*
+ * General/Utility Styles
+*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  margin: 0;
+  background: rgb(225, 225, 225);
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(86, 90, 92);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.375rem;
+}
+
+hr {
+  border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+/*
+ * Button styles
+*/
+
+.button {
+  background: rgb(255, 89, 95);
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 2px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* header styling */
+header {
+  background-color: #fff;
+}
+
+header img {
+  border-right: 1px solid #dce0e0;
+}
+
+.parallax img {
+  width: 100%;
+}
+
+/* Navigation Area */
+
+.navigation {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+/* Profile Area */
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1.75rem;
+  text-align: center;
+}
+
+.profile h1 {
+  font-size: 1.375rem;
+}
+
+.profile h3 {
+  margin: 0.56rem;
+}
+
+.owner-details {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.owner-details img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.icons img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Booking Classes */
+
+.booking p {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+/* About Section */
+
+main {
+  padding: 0.5rem 1rem;
+}
+
+.about h3,
+.contact {
+  font-size: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about p {
+  font-size: 0.8125rem;
+  text-align: justify;
+}
+
+.about .contact {
+  color: #f55;
+  text-align: center;
+}
+
+/* Care Section */
+
+.care p:nth-child(1) {
+  margin-bottom: 0.5rem;
+}
+
+/* Photos Section */
+
+.photos img {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+@media only screen and (min-width: 1060px) {
+  /* Navigation Styles */
+  .navigation {
+    display: grid;
+    grid-template-columns: 660px 380px;
+    justify-content: center;
+  }
+  .profile {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  /* Center Booking Section */
+  .booking {
+    align-self: center;
+  }
+
+  /* Contact Styles */
+  .about .contact {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  /* Content Styles */
+  /* hr tag Style */
+  .about,
+  .care,
+  .games,
+  .photos,
+  hr {
+    width: 660px;
+    margin-left: 14.375rem;
+  }
+
+  .care,
+  .games {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
