@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>AirCnC - Rent a Cat or Dog</title>
+    <link rel="stylesheet" href="css/lightbox.min.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <meta
@@ -99,9 +100,16 @@
     </main>
     <hr />
     <main class="photos">
-      <img src="images/dog-1.jpg" alt="" srcset="" />
-      <img src="images/dog-2.jpg" alt="" srcset="" />
-      <img src="images/dog-3.jpg" alt="" srcset="" />
+      <a href="images/dog-1.jpg" data-lightbox="dog" data-title="My Dog">
+        <img src="images/dog-1.jpg" alt="My Dog" srcset="" />
+      </a>
+      <a href="images/dog-2.jpg" data-lightbox="dog" data-title="My Dog">
+        <img src="images/dog-2.jpg" alt="My Dog" srcset="" />
+      </a>
+      <a href="images/dog-3.jpg" data-lightbox="dog" data-title="My Dog">
+        <img src="images/dog-3.jpg" alt="My Dog" srcset="" />
+      </a>
     </main>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
   </body>
 </html>

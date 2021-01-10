@@ -65,8 +65,16 @@ header img {
   border-right: 1px solid #dce0e0;
 }
 
+.parallax {
+  overflow: hidden;
+}
+
 .parallax img {
   width: 100%;
+  transition: 500ms all ease;
+}
+.parallax img:hover {
+  transform: scale(1.2);
 }
 
 /* Navigation Area */
@@ -157,6 +165,11 @@ main {
 
 .photos img {
   width: 100%;
+  transition: 500ms all ease;
+}
+
+.photos img:hover {
+  filter: blur(2px);
 }
 
 @media only screen and (min-width: 1060px) {
